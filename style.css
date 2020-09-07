@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    line-height: 1.5em;
+}
+
+[type="text"] {
+    outline: none;
+    font-size: 1.2em;
+    border: none;
+    flex-grow: 1;
+}
+
+button {
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+form {
+    border-radius: 100px;
+    padding: 1em;
+    border: 1px solid lightgray;
+    display: flex;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+form:focus-within, form:hover {
+    border-color: white;
+    box-shadow: 0px 0px 5px darkgray;
+}
+
+main {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 3em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.container {
+    width: 50%;
+    min-width: 800px;
+}
+
+.city {
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.temp {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.desc {
+    text-transform: capitalize;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    filter: drop-shadow(0px 0px 5px darkgray);
+}
+
+.today {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.hour {
+    cursor: pointer;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 0 1em;
+    line-height: 2.5em;
+}
+
+@media(max-width: 900px) {
+    body {
+        display: block;
+        padding: 1em;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .today {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .hour {
+        margin-top: 1em;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <form>
+                <input type="text" name="city" id="city" placeholder="City" spellcheck="false">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+        <main>
+            <div class="info">
+                <div>
+                    <div class="city"></div>
+                    <div class="date"></div>
+                    <div class="desc"></div>
+                    <div class="weather">
+                        <div class="temp"></div>
+                        <img src="#">
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="humidity">Humidity: 69%</div>
+                    <div class="pressure">Pressure: 1200 hPa</div>
+                    <div class="wind">Wind: 10 km/h</div>
+                </div>
+            </div>
+            <div class="today">
+                <div class="hour active"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+                <div class="hour"></div>
+            </div>
+            <div class="forecast">
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
